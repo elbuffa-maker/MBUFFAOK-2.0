@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Martinez Buffa | Psicólogo & Creador de Reels</title>
+    <meta name="description"
+        content="Licenciado en Psicología (UBA). Diplomado en Evaluación y tratamiento neurocognitivo (UFLO). +14 años de experiencia profesional.">
+    <link rel="stylesheet" href="index.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <div id="particles-container" class="particles"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo-container">
+                <img src="images/original_logo.png" alt="MB Logo" class="logo-img">
+            </div>
+            <div class="nav-links">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#experiencia" class="nav-link">Experiencia</a>
+                <a href="#about" class="nav-link">Trayectoria</a>
+                <a href="#servicios" class="nav-link">Servicios</a>
+            </div>
+            <button onclick="toggleModal('booking-modal')" class="btn btn-primary nav-cta">Reservar Sesión</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="hero-label-tag reveal">Lic. Emmanuel Martinez Buffa</span>
+                <h1 class="hero-title reveal">
+                    Porque estar mejor <span>siempre es posible.</span>
+                </h1>
+                <p class="hero-subtitle reveal">
+                    Acompañamiento profesional en tu camino hacia el desarrollo personal y el bienestar emocional con un
+                    enfoque moderno y científico.
+                </p>
+                <div class="hero-btns reveal">
+                    <button onclick="toggleModal('booking-modal')" class="btn btn-primary">Reservar ahora</button>
+                    <a href="#servicios" class="btn btn-outline" style="margin-left: 16px;">Ver servicios</a>
+                </div>
+            </div>
+            <div class="hero-visual reveal">
+                <div class="profile-frame">
+                    <img src="images/profile_photo.webp" alt="Emmanuel Martinez Buffa" class="profile-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <div class="stats-bar" id="experiencia">
+        <div class="container stats-flex">
+            <div class="stat-item reveal">
+                <h2 class="stat-number" data-target="500">0</h2>
+                <p class="stat-label">+500 pacientes atendidos</p>
+            </div>
+            <div class="stat-item reveal" style="animation-delay: 0.1s;">
+                <h2 class="stat-number" data-target="10000000">0</h2>
+                <p class="stat-label">+10 millones de vistas mensuales</p>
+            </div>
+            <div class="stat-item reveal" style="animation-delay: 0.2s;">
+                <h2 class="stat-number" data-target="14">0</h2>
+                <p class="stat-label">+14 años de experiencia</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience Detail -->
+    <section class="experience-detail reveal">
+        <div class="container text-center">
+            <div class="glass-card">
+                <p class="experience-text">Hace más de 14 años trabajo asistiendo a pacientes a mejorar su vida y a
+                    maximizar sus propias habilidades para potenciar el desarrollo personal y lograr el bienestar
+                    socio-emocional.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text glass-card reveal">
+                    <span class="label-accent">Mi Trayectoria</span>
+                    <h2>Psicólogo egresado de la UBA</h2>
+                    <p>Soy un profesional apasionado por el desarrollo humano y la salud mental funcional. Me gradué en
+                        la Universidad de Buenos Aires (UBA) y cuento con un <strong>Diplomado en Evaluación y
+                            tratamiento neurocognitivo</strong> cursado en la Universidad de Flores (UFLO).</p>
+                    <p>Mi práctica se aleja de los discursos motivacionales vacíos para enfocarse en cambios reales
+                        basados en evidencia científica (TCC), integrando la modernidad de las redes sociales con la
+                        profundidad del consultorio tradicional.</p>
+                </div>
+                <div class="about-pillars reveal">
+                    <div class="pillar-card glass-card">
+                        <h3>🌱 Crecimiento</h3>
+                        <p>Construcción de una identidad consciente y sólida.</p>
+                    </div>
+                    <div class="pillar-card glass-card">
+                        <h3>🏠 Vida Diaria</h3>
+                        <p>Herramientas prácticas para tu rutina y desafíos.</p>
+                    </div>
+                    <div class="pillar-card glass-card">
+                        <h3>📊 Evidencia</h3>
+                        <p>Enfoque científico y resultados medibles y sostenibles.</p>
+                    </div>
+                    <div class="pillar-card glass-card">
+                        <h3>🎭 Realidad</h3>
+                        <p>Salud mental aplicada al mundo dinámico actual.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="services-section" id="servicios">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Servicios Especializados</h2>
+                <p>Propuestas diseñadas para transformar tu bienestar.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card-flip reveal">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <img src="images/service_therapy_new.png" alt="Terapia Individual" class="service-img-bg"
+                                onerror="this.src='images/service_1.jpg'">
+                            <div class="service-overlay">
+                                <h3>Terapia Individual</h3>
+                            </div>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <h3>Terapia Individual</h3>
+                            <p>Sesiones enfocadas en el procesamiento emocional y resolución de conflictos internos y
+                                vinculares.</p>
+                            <div class="tags"><span class="tag">Compromiso</span><span class="tag">Empatía</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card-flip reveal" style="animation-delay: 0.1s;">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <img src="images/service_tcc_new.png" alt="TCC" class="service-img-bg"
+                                onerror="this.src='images/service_2.jpg'">
+                            <div class="service-overlay">
+                                <h3>Enfoque TCC</h3>
+                            </div>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <h3>Enfoque TCC</h3>
+                            <p>Abordajes prácticos y eficaces para ansiedad, depresión y cambio de patrones de
+                                pensamiento.</p>
+                            <div class="tags"><span class="tag">Científico</span><span class="tag">Eficaz</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card-flip reveal" style="animation-delay: 0.2s;">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <img src="images/service_content_new.png" alt="Creador de Reels" class="service-img-bg"
+                                onerror="this.src='images/service_3.jpg'">
+                            <div class="service-overlay">
+                                <h3>Creador de Reels</h3>
+                            </div>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <h3>Creador de Reels</h3>
+                            <p>Divulgación disruptiva de salud mental. Reels que impactan, educan y transforman
+                                digitalmente.</p>
+                            <div class="tags"><span class="tag">Social Media</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaborations -->
+    <section class="collaborations reveal">
+        <div class="container text-center">
+            <div class="glass-card">
+                <h2>Colaboraciones & Prensa</h2>
+                <p style="margin-bottom: 24px;">¿Tienes una marca o proyecto de salud mental? Generemos impacto juntos.
+                </p>
+                <button onclick="toggleModal('collab-modal')" class="btn btn-outline">Reservar entrevista</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal (Patient) -->
+    <div id="booking-modal" class="modal-overlay">
+        <div class="modal-content glass-card">
+            <button onclick="toggleModal('booking-modal')" class="close-btn">×</button>
+            <h3 class="modal-title">Solicitar Turno</h3>
+            <p class="modal-desc">Completa tus datos para iniciar tu proceso terapéutico.</p>
+            <form id="contact-form" action="https://formspree.io/f/xzdavlak" method="POST">
+                <input type="text" name="nombre" placeholder="Nombre Completo" required>
+                <input type="email" name="email" placeholder="Correo Electrónico" required>
+                <input type="tel" name="telefono" placeholder="Teléfono / WhatsApp" required>
+                <textarea name="motivo" placeholder="Motivo de tu consulta..." rows="4" required></textarea>
+                <button type="submit" class="btn btn-primary w-100">Enviar Solicitud</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Collab Modal -->
+    <div id="collab-modal" class="modal-overlay">
+        <div class="modal-content glass-card">
+            <button onclick="toggleModal('collab-modal')" class="close-btn">×</button>
+            <h3 class="modal-title">Propuesta de Colaboración</h3>
+            <p class="modal-desc">Cuéntame sobre tu proyecto o marca.</p>
+            <form id="collab-form" action="https://formspree.io/f/xzdavlak" method="POST">
+                <input type="text" name="empresa" placeholder="Tu Nombre / Empresa" required>
+                <input type="email" name="email" placeholder="Email de contacto" required>
+                <textarea name="propuesta" placeholder="Cuéntame sobre la colaboración..." rows="4" required></textarea>
+                <button type="submit" class="btn btn-primary w-100">Reservar entrevista</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <img src="images/original_logo.png" alt="MB Logo" class="footer-logo">
+                <p>Lic. Emmanuel Martinez Buffa</p>
+                <button onclick="toggleModal('booking-modal')" class="btn btn-primary"
+                    style="margin-top: 15px; padding: 10px 20px; font-size: 14px;">Reservar Cita</button>
+            </div>
+            <div class="footer-social-links">
+                <a href="https://instagram.com/martinezbuffaok" target="_blank" class="social-icon-link">
+                    <i data-lucide="instagram"></i> Instagram
+                </a>
+                <a href="https://wa.me/541137796812" target="_blank" class="social-icon-link">
+                    <i data-lucide="message-circle"></i> WhatsApp
+                </a>
+            </div>
+            <p class="copyright">© 2026 Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
